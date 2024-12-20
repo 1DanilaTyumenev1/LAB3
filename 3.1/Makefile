@@ -3,9 +3,9 @@
 Compiler = g++
 RELEASE_FLAGS = -O2 -Wall -DNDEBUG -Iheaders 
 DEBUG_FLAGS   = -g -O0 -Wall -Iheaders
-RELEASE_EXEC  = table
-DEBUG_EXEC    = table-dbg 
-SOURCES       = main.cpp modTableCipher.cpp
+RELEASE_EXEC  = labfirst
+DEBUG_EXEC    = labfirst-dbg -lUnitTest++
+SOURCES       = main.cpp modAlphaCipher.cpp
 Libary        = -lUnitTest++
 all: debug release
 
